@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, TestimonialCard } from './'
+import { TestimonialCard } from './'
 
 function Testimonials() {
   const testimonialList = [
@@ -23,11 +23,11 @@ function Testimonials() {
     },
   ]
   return (
-    <section className='py-10'>
+    <section className='py-8'>
       <h2 className='mb-10 text-center text-4xl  tracking-widest font-semibold uppercase text-neutral-500'>
         Client testimonials
       </h2>
-      <Container className='m-auto  max-w-[1280px] flex'>
+      <div className='w-full flex flex-col gap-8 sm:flex-row sm:px-8 lg:px-20'>
         {testimonialList.map(item => (
           <TestimonialCard
             key={item.name}
@@ -37,8 +37,9 @@ function Testimonials() {
             comment={item.comment}
           />
         ))}
+      </div>
 
-      </Container>
+
     </section>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Logo } from './'
 
-function Footer() {
+function Footer({ device }) {
   const navList = [
     { name: "About", },
     { name: "Services", },
@@ -14,15 +14,15 @@ function Footer() {
     { link: "/images/icon-pinterest.svg", alt: "pinterest social" },
   ]
   const imageList = [
-    { link: `/images/desktop/image-gallery-milkbottles.jpg`, alt: "milk bottle" },
-    { link: `/images/desktop/image-gallery-orange.jpg`, alt: "orange" },
-    { link: `/images/desktop/image-gallery-cone.jpg`, alt: "cone" },
-    { link: `/images/desktop/image-gallery-sugarcubes.jpg`, alt: "sugarcubes" },
+    { link: `/images/${device}/image-gallery-milkbottles.jpg`, alt: "milk bottle" },
+    { link: `/images/${device}/image-gallery-orange.jpg`, alt: "orange" },
+    { link: `/images/${device}/image-gallery-cone.jpg`, alt: "cone" },
+    { link: `/images/${device}/image-gallery-sugarcubes.jpg`, alt: "sugarcubes" },
   ]
   return (
     <footer className=' bg-[hsl(167,34%,50%)]'>
 
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4">
         {imageList.map((item) => (
           <img
             className="w-full h-full"
@@ -33,13 +33,13 @@ function Footer() {
         ))}
       </div>
 
-      <div className='w-[300px] h-[300px] mx-auto p-14 flex flex-col '>
+      <div className='w-[300px] h-[300px] mx-auto px-4 pt-14   flex flex-col '>
 
         <div className='mb-4 flex justify-center'>
           <Logo />
         </div>
 
-        <ul className='mb-20 flex gap-20 justify-center'>
+        <ul className='mb-20 flex justify-between sm:gap-20  sm:justify-center  '>
           {navList.map((item) => (
             <li
               key={item.name}>
@@ -59,7 +59,7 @@ function Footer() {
             >
               <img
                 // do i write key here? too
-                className='w-full h-full duration-200 transition-all hover:brightness-[200] '
+                className='w-full h-full brightness-50 hover:brightness-[200] '
                 src={item.link}
                 alt={item.alt} />
             </a>
