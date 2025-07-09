@@ -24,14 +24,14 @@ function App() {
 
   const MarketingMessageList = [
     {
-      imageSrc: `/images/${device}/image-transform.jpg`,
+      imageSrc: `./images/${device}/image-transform.jpg`,
       alt: "image",
       title: "Transform your brand",
       description: "We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.",
       flip: true,
     },
     {
-      imageSrc: `/images/${device}/image-stand-out.jpg`,
+      imageSrc: `./images/${device}/image-stand-out.jpg`,
       alt: "image",
       title: "Stand out to the right audience",
       description: "We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.",
@@ -41,13 +41,13 @@ function App() {
 
   const featureList = [
     {
-      imageSrc: `/images/${device}/image-graphic-design.jpg`,
+      imageSrc: `./images/${device}/image-graphic-design.jpg`,
       alt: "graphic design",
       title: " Graphic design",
       description: "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention."
     },
     {
-      imageSrc: `/images/${device}/image-photography.jpg`,
+      imageSrc: `./images/${device}/image-photography.jpg`,
       alt: "photography",
       title: "Photography",
       description: "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",

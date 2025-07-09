@@ -8,16 +8,16 @@ function Footer({ device }) {
     { name: "Projects", },
   ]
   const socialList = [
-    { link: "/images/icon-facebook.svg", alt: "facebook social" },
-    { link: "/images/icon-instagram.svg", alt: "instagram social" },
-    { link: "/images/icon-twitter.svg", alt: "twitter social" },
-    { link: "/images/icon-pinterest.svg", alt: "pinterest social" },
+    { link: "./images/icon-facebook.svg", alt: "facebook social" },
+    { link: "./images/icon-instagram.svg", alt: "instagram social" },
+    { link: "./images/icon-twitter.svg", alt: "twitter social" },
+    { link: "./images/icon-pinterest.svg", alt: "pinterest social" },
   ]
   const imageList = [
-    { link: `/images/${device}/image-gallery-milkbottles.jpg`, alt: "milk bottle" },
-    { link: `/images/${device}/image-gallery-orange.jpg`, alt: "orange" },
-    { link: `/images/${device}/image-gallery-cone.jpg`, alt: "cone" },
-    { link: `/images/${device}/image-gallery-sugarcubes.jpg`, alt: "sugarcubes" },
+    { link: `./images/${device}/image-gallery-milkbottles.jpg`, alt: "milk bottle" },
+    { link: `./images/${device}/image-gallery-orange.jpg`, alt: "orange" },
+    { link: `./images/${device}/image-gallery-cone.jpg`, alt: "cone" },
+    { link: `./images/${device}/image-gallery-sugarcubes.jpg`, alt: "sugarcubes" },
   ]
   return (
     <footer className=' bg-[hsl(167,34%,50%)]'>
