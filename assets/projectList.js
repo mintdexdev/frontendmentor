@@ -243,9 +243,16 @@ export const projectList = [
     id: 31,
     projectName: 'Advice Generator',
     projectLink: 'p31_advice_generator/index.html',
-    projectDate: 'Feburary 2025',
+    projectDate: 'May 2025',
     projectImage: 'assets/image/31.png',
     projectVideo: 'assets/video/31.mp4',
   },
-
+  {
+    id: 32,
+    projectName: 'Sunnyside Agency',
+    projectLink: 'p32_sunnyside_agency/dist/index.html',
+    projectDate: 'July 2025',
+    projectImage: 'assets/image/32.png',
+    projectVideo: 'assets/video/32.mp4',
+  },
 ]
