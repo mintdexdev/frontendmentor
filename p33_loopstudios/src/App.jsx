@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
-import { Creations, Intro, Footer, Header } from './components';
+import { Creations, Intro, Footer, Header, Hero } from './components';
 
 
 
@@ -23,7 +23,7 @@ function App() {
   return (
     <div>
       {/* <Header /> */}
-      {/* <Hero /> */}
+      <Hero currentDevice={currentDevice} />
 
       <main>
 
