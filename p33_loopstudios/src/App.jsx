@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div>
-      {/* <Header /> */}
+      <Header currentDevice={currentDevice}  />
       <Hero currentDevice={currentDevice} />
 
       <main>
