@@ -3,8 +3,9 @@ import Container from './Container/Container'
 import { iconHamburger, iconLogo } from '../assets'
 
 function Header({ currentDevice }) {
+  const navList = ["About", "Carrers", "Events", "Products", "Support"];
   return (
-    <header className='absolute top-0 left-0 right-0'>
+    <header className='absolute top-0 left-0 right-0 z-10'>
       <Container>
         <nav className='flex justify-between py-10'>
           <div>
@@ -12,11 +13,13 @@ function Header({ currentDevice }) {
           </div>
           {currentDevice === 'desktop' ?
             <ul className='flex gap-8'>
-              <li className='text-white 2xl:text-xl'>About</li>
-              <li className='text-white 2xl:text-xl'>Carrers</li>
-              <li className='text-white 2xl:text-xl'>Events</li>
-              <li className='text-white 2xl:text-xl'>Ptoducts</li>
-              <li className='text-white 2xl:text-xl'>Support</li>
+              {navList.map(item => (
+                <li className='text-white 2xl:text-xl hover:text-neutral-400 duration-200'
+                  key={item}
+                >
+                  <a href="#all-creations">{item}</a>
+                </li>
+              ))}
             </ul> :
             <img src={iconHamburger} alt="" />
           }

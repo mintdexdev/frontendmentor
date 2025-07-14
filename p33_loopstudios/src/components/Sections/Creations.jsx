@@ -49,7 +49,7 @@ function Creations({ currentDevice }) {
   }
 
   return (
-    <section>
+    <section id='all-creations'>
       <Container>
         <div className='py-20 '>
           <div className='flex justify-center sm:justify-between items-center'>
