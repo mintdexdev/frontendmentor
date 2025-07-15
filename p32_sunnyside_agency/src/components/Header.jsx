@@ -69,7 +69,7 @@ function Header({ device }) {
         </div>
         {device === 'mobile' ?
           <img
-            src="/images/icon-hamburger.svg"
+            src="./images/icon-hamburger.svg"
             alt="menu btn"
           />
           : <ul className='flex gap-8 items-center'>
@@ -121,14 +121,14 @@ function Header({ device }) {
           </h1>
           <motion.img
             className='h-[80px] mx-auto my-10  lg:my-16 md:h-fit'
-            src="/images/icon-arrow-down.svg"
+            src="./images/icon-arrow-down.svg"
             alt="down arrow"
             animate={arrowFlickControls}
           />
         </div>
         <img
           className='h-[100vh] object-cover w-full overflow-clip'
-          src={`/images/${device}/image-header.jpg`}
+          src={`./images/${device}/image-header.jpg`}
           alt="" />
       </section>
     </header >
