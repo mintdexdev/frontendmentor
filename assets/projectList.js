@@ -255,4 +255,20 @@ export const projectList = [
     projectImage: 'assets/image/32.png',
     projectVideo: 'assets/video/32.mp4',
   },
+  {
+    id: 33,
+    projectName: 'LoopStudios',
+    projectLink: 'p33_loopstudios/index.html',
+    projectDate: 'July 2025',
+    projectImage: 'assets/image/33.png',
+    projectVideo: 'assets/video/33.mp4',
+  },
+  {
+    id: 34,
+    projectName: 'Fylo Dark',
+    projectLink: 'p34_fylo_dark/index.html',
+    projectDate: 'July 2025',
+    projectImage: 'assets/image/34.png',
+    projectVideo: 'assets/video/34.mp4',
+  },
 ]
