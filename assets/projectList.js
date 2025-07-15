@@ -186,7 +186,7 @@ export const projectList = [
   {
     id: 24,
     projectName: 'Product list with Cart',
-    projectLink: 'p24_product_list_with_cart/dist/index.html',
+    projectLink: 'p24_product_list_with_cart/index.html',
     projectDate: 'Feburary 2025',
     projectImage: 'assets/image/24.png',
     projectVideo: 'assets/video/24.mp4',
@@ -210,7 +210,7 @@ export const projectList = [
   {
     id: 27,
     projectName: 'News homepage',
-    projectLink: 'p27_news_homepage/dist/index.html',
+    projectLink: 'p27_news_homepage/index.html',
     projectDate: 'Feburary 2025',
     projectImage: 'assets/image/27.png',
     projectVideo: 'assets/video/27.mp4',
@@ -218,7 +218,7 @@ export const projectList = [
   {
     id: 28,
     projectName: 'Expenses Chart',
-    projectLink: 'p28_expenses_chart/dist/index.html',
+    projectLink: 'p28_expenses_chart/index.html',
     projectDate: 'Feburary 2025',
     projectImage: 'assets/image/28.png',
     projectVideo: 'assets/video/28.mp4',
@@ -250,7 +250,7 @@ export const projectList = [
   {
     id: 32,
     projectName: 'Sunnyside Agency',
-    projectLink: 'p32_sunnyside_agency/dist/index.html',
+    projectLink: 'p32_sunnyside_agency/index.html',
     projectDate: 'July 2025',
     projectImage: 'assets/image/32.png',
     projectVideo: 'assets/video/32.mp4',
