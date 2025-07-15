@@ -4,7 +4,8 @@ export const projectList = [
     projectName: 'Recipe page',
     projectLink: 'p01_recipe_page/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/1.png',
+    projectImage: 'assets/image/1.avif',
+    projectImageFallback: 'assets/imageFallback/1.jpg',
     projectVideo: 'assets/video/1.mp4',
   },
   {
@@ -12,7 +13,8 @@ export const projectList = [
     projectName: 'Social Links Profile',
     projectLink: 'p02_social_links_profile/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/2.png',
+    projectImage: 'assets/image/2.avif',
+    projectImageFallback: 'assets/imageFallback/2.jpg',
     projectVideo: 'assets/video/2.mp4',
   },
   {
@@ -20,7 +22,8 @@ export const projectList = [
     projectName: 'Blog Preview',
     projectLink: 'p03_blog_preview/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/3.png',
+    projectImage: 'assets/image/3.avif',
+    projectImageFallback: 'assets/imageFallback/3.jpg',
     projectVideo: 'assets/video/3.mp4',
   },
   {
@@ -28,7 +31,8 @@ export const projectList = [
     projectName: 'Faq Accordion',
     projectLink: 'p04_faq_accordion/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/4.png',
+    projectImage: 'assets/image/4.avif',
+    projectImageFallback: 'assets/imageFallback/4.jpg',
     projectVideo: 'assets/video/4.mp4',
   },
   {
@@ -36,7 +40,8 @@ export const projectList = [
     projectName: 'Results Summary',
     projectLink: 'p05_results_summary/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/5.png',
+    projectImage: 'assets/image/5.avif',
+    projectImageFallback: 'assets/imageFallback/5.jpg',
     projectVideo: 'assets/video/5.mp4',
   },
   {
@@ -44,7 +49,8 @@ export const projectList = [
     projectName: 'Product Preview',
     projectLink: 'p06_product_preview/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/6.png',
+    projectImage: 'assets/image/6.avif',
+    projectImageFallback: 'assets/imageFallback/6.jpg',
     projectVideo: 'assets/video/6.mp4',
   },
   {
@@ -52,7 +58,8 @@ export const projectList = [
     projectName: 'Interactive Rating',
     projectLink: 'p07_interactive_rating/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/7.png',
+    projectImage: 'assets/image/7.avif',
+    projectImageFallback: 'assets/imageFallback/7.jpg',
     projectVideo: 'assets/video/7.mp4',
   },
   {
@@ -60,7 +67,8 @@ export const projectList = [
     projectName: 'QR Code',
     projectLink: 'p08_qr_code/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/8.png',
+    projectImage: 'assets/image/8.avif',
+    projectImageFallback: 'assets/imageFallback/8.jpg',
     projectVideo: 'assets/video/8.mp4',
   },
   {
@@ -68,7 +76,8 @@ export const projectList = [
     projectName: 'NFT Preview',
     projectLink: 'p09_nft_preview/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/9.png',
+    projectImage: 'assets/image/9.avif',
+    projectImageFallback: 'assets/imageFallback/9.jpg',
     projectVideo: 'assets/video/9.mp4',
   },
   {
@@ -76,7 +85,8 @@ export const projectList = [
     projectName: 'Oder Summary',
     projectLink: 'p10_order_summary/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/10.png',
+    projectImage: 'assets/image/10.avif',
+    projectImageFallback: 'assets/imageFallback/10.jpg',
     projectVideo: 'assets/video/10.mp4',
   },
   {
@@ -84,7 +94,8 @@ export const projectList = [
     projectName: 'Status Preview',
     projectLink: 'p11_stats_preview/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/11.png',
+    projectImage: 'assets/image/11.avif',
+    projectImageFallback: 'assets/imageFallback/11.jpg',
     projectVideo: 'assets/video/11.mp4',
   },
   {
@@ -92,7 +103,8 @@ export const projectList = [
     projectName: '3 Column',
     projectLink: 'p12_3_column_preview/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/12.png',
+    projectImage: 'assets/image/12.avif',
+    projectImageFallback: 'assets/imageFallback/12.jpg',
     projectVideo: 'assets/video/12.mp4',
   },
   {
@@ -100,7 +112,8 @@ export const projectList = [
     projectName: 'Profile',
     projectLink: 'p13_profile/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/13.png',
+    projectImage: 'assets/image/13.avif',
+    projectImageFallback: 'assets/imageFallback/13.jpg',
     projectVideo: 'assets/video/13.mp4',
   },
   {
@@ -108,7 +121,8 @@ export const projectList = [
     projectName: 'Social Proof',
     projectLink: 'p14_social_proof/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/14.png',
+    projectImage: 'assets/image/14.avif',
+    projectImageFallback: 'assets/imageFallback/14.jpg',
     projectVideo: 'assets/video/14.mp4',
   },
   {
@@ -116,7 +130,8 @@ export const projectList = [
     projectName: 'Article Preview',
     projectLink: 'p15_article_preview/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/15.png',
+    projectImage: 'assets/image/15.avif',
+    projectImageFallback: 'assets/imageFallback/15.jpg',
     projectVideo: 'assets/video/15.mp4',
   },
   {
@@ -124,7 +139,8 @@ export const projectList = [
     projectName: 'Four Card',
     projectLink: 'p16_four_card_feature/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/16.png',
+    projectImage: 'assets/image/16.avif',
+    projectImageFallback: 'assets/imageFallback/16.jpg',
     projectVideo: 'assets/video/16.mp4',
   },
   {
@@ -132,7 +148,8 @@ export const projectList = [
     projectName: 'Base Apparel',
     projectLink: 'p17_base_apparel_coming_soon/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/17.png',
+    projectImage: 'assets/image/17.avif',
+    projectImageFallback: 'assets/imageFallback/17.jpg',
     projectVideo: 'assets/video/17.mp4',
   },
   {
@@ -140,7 +157,8 @@ export const projectList = [
     projectName: 'Intro Component',
     projectLink: 'p18_intro_component_signup/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/18.png',
+    projectImage: 'assets/image/18.avif',
+    projectImageFallback: 'assets/imageFallback/18.jpg',
     projectVideo: 'assets/video/18.mp4',
   },
   {
@@ -148,7 +166,8 @@ export const projectList = [
     projectName: 'Single Price',
     projectLink: 'p19_single_price_grid/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/19.png',
+    projectImage: 'assets/image/19.avif',
+    projectImageFallback: 'assets/imageFallback/19.jpg',
     projectVideo: 'assets/video/19.mp4',
   },
   {
@@ -156,7 +175,8 @@ export const projectList = [
     projectName: 'Ping `Comming soon`',
     projectLink: 'p20_ping_coming_soon_page/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/20.png',
+    projectImage: 'assets/image/20.avif',
+    projectImageFallback: 'assets/imageFallback/20.jpg',
     projectVideo: 'assets/video/20.mp4',
   },
   {
@@ -164,7 +184,8 @@ export const projectList = [
     projectName: 'Huddle',
     projectLink: 'p21_huddle_landing_page/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/21.png',
+    projectImage: 'assets/image/21.avif',
+    projectImageFallback: 'assets/imageFallback/21.jpg',
     projectVideo: 'assets/video/21.mp4',
   },
   {
@@ -172,7 +193,8 @@ export const projectList = [
     projectName: 'Conference Ticket',
     projectLink: 'p22_conference_ticket_generator/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/22.png',
+    projectImage: 'assets/image/22.avif',
+    projectImageFallback: 'assets/imageFallback/22.jpg',
     projectVideo: 'assets/video/22.mp4',
   },
   {
@@ -180,7 +202,8 @@ export const projectList = [
     projectName: 'Bento',
     projectLink: 'p23_bento_grid/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/23.png',
+    projectImage: 'assets/image/23.avif',
+    projectImageFallback: 'assets/imageFallback/23.jpg',
     projectVideo: 'assets/video/23.mp4',
   },
   {
@@ -188,7 +211,8 @@ export const projectList = [
     projectName: 'Product list with Cart',
     projectLink: 'p24_product_list_with_cart/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/24.png',
+    projectImage: 'assets/image/24.avif',
+    projectImageFallback: 'assets/imageFallback/24.jpg',
     projectVideo: 'assets/video/24.mp4',
   },
   {
@@ -196,7 +220,8 @@ export const projectList = [
     projectName: 'Mortgage repayment calculator',
     projectLink: 'p25_mortgage_repayment_calculator/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/25.png',
+    projectImage: 'assets/image/25.avif',
+    projectImageFallback: 'assets/imageFallback/25.jpg',
     projectVideo: 'assets/video/25.mp4',
   },
   {
@@ -204,7 +229,8 @@ export const projectList = [
     projectName: 'Contact Form',
     projectLink: 'p26_contact_form/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/26.png',
+    projectImage: 'assets/image/26.avif',
+    projectImageFallback: 'assets/imageFallback/26.jpg',
     projectVideo: 'assets/video/26.mp4',
   },
   {
@@ -212,7 +238,8 @@ export const projectList = [
     projectName: 'News homepage',
     projectLink: 'p27_news_homepage/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/27.png',
+    projectImage: 'assets/image/27.avif',
+    projectImageFallback: 'assets/imageFallback/27.jpg',
     projectVideo: 'assets/video/27.mp4',
   },
   {
@@ -220,7 +247,8 @@ export const projectList = [
     projectName: 'Expenses Chart',
     projectLink: 'p28_expenses_chart/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/28.png',
+    projectImage: 'assets/image/28.avif',
+    projectImageFallback: 'assets/imageFallback/28.jpg',
     projectVideo: 'assets/video/28.mp4',
   },
   {
@@ -228,7 +256,8 @@ export const projectList = [
     projectName: 'Interactive Pricing',
     projectLink: 'p29_interactive_pricing/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/29.png',
+    projectImage: 'assets/image/29.avif',
+    projectImageFallback: 'assets/imageFallback/29.jpg',
     projectVideo: 'assets/video/29.mp4',
   },
   {
@@ -236,7 +265,8 @@ export const projectList = [
     projectName: 'Testimonials',
     projectLink: 'p30_testimonials/index.html',
     projectDate: 'Feburary 2025',
-    projectImage: 'assets/image/30.png',
+    projectImage: 'assets/image/30.avif',
+    projectImageFallback: 'assets/imageFallback/30.jpg',
     projectVideo: 'assets/video/30.mp4',
   },
   {
@@ -244,7 +274,8 @@ export const projectList = [
     projectName: 'Advice Generator',
     projectLink: 'p31_advice_generator/index.html',
     projectDate: 'May 2025',
-    projectImage: 'assets/image/31.png',
+    projectImage: 'assets/image/31.avif',
+    projectImageFallback: 'assets/imageFallback/31.jpg',
     projectVideo: 'assets/video/31.mp4',
   },
   {
@@ -252,7 +283,8 @@ export const projectList = [
     projectName: 'Sunnyside Agency',
     projectLink: 'p32_sunnyside_agency/index.html',
     projectDate: 'July 2025',
-    projectImage: 'assets/image/32.png',
+    projectImage: 'assets/image/32.avif',
+    projectImageFallback: 'assets/imageFallback/32.jpg',
     projectVideo: 'assets/video/32.mp4',
   },
   {
@@ -260,7 +292,8 @@ export const projectList = [
     projectName: 'LoopStudios',
     projectLink: 'p33_loopstudios/index.html',
     projectDate: 'July 2025',
-    projectImage: 'assets/image/33.png',
+    projectImage: 'assets/image/33.avif',
+    projectImageFallback: 'assets/imageFallback/33.jpg',
     projectVideo: 'assets/video/33.mp4',
   },
   {
@@ -268,7 +301,8 @@ export const projectList = [
     projectName: 'Fylo Dark',
     projectLink: 'p34_fylo_dark/index.html',
     projectDate: 'July 2025',
-    projectImage: 'assets/image/34.png',
+    projectImage: 'assets/image/34.avif',
+    projectImageFallback: 'assets/imageFallback/34.jpg',
     projectVideo: 'assets/video/34.mp4',
   },
 ]
