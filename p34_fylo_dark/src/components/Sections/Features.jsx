@@ -38,7 +38,7 @@ function Features() {
          after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-neutral-600 
         '>
 
-          <div className='max-w-[1200px] grid grid-cols-2 gap-14 justify-items-center'>
+          <div className='max-w-[1200px] grid  md:grid-cols-2 md:gap-14 justify-items-center'>
             {featureList.map(item => (
               <FeatureCard
                 key={item.title}

@@ -6,10 +6,10 @@ function Header() {
     <header>
       <Container>
         <nav className='flex justify-between pt-10'>
-          <div>
+          <div className='w-20'>
             <Logo />
           </div>
-          <ul className='flex gap-10 text-neutral-300'>
+          <ul className='flex gap-4 sm:gap-10 text-neutral-300'>
             <li>Features</li>
             <li>Team</li>
             <li>Sign in</li>

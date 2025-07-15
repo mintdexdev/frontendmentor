@@ -9,18 +9,18 @@ function Working() {
         <div className='py-20'>
 
           {/* content-starts */}
-          <div className='flex'>
+          <div className='md:flex'>
 
-            <div className='w-[50%] p-8'>
+            <div className='md:w-[50%] p-8'>
               <img src={imgIllustrationStayProductive} alt="Illustration of stay Productive" />
             </div>
 
-            <div className='w-[50%] content-center'>
-              <h2 className='text-5xl mb-5'> Stay productive, wherever you are </h2>
+            <div className='md:w-[50%] content-center'>
+              <h2 className='text-3xl md:text-5xl mb-5'> Stay productive, wherever you are </h2>
 
-              <p className='mb-3'> Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. </p>
+              <p className='mb-3 text-neutral-400'> Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. </p>
 
-              <p className='mb-3'> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required. </p>
+              <p className='mb-3 text-neutral-400'> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required. </p>
 
               <a className='relative text-cyan-300
               after:absolute after:-bottom-1.5 after:left-0 after:w-full after:h-[2px] after:bg-cyan-500'

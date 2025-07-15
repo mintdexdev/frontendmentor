@@ -33,7 +33,7 @@ function Comments() {
          after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-neutral-600 '>
 
           {/* content-starts */}
-          <div className='w-fit flex gap-8
+          <div className='w-fit flex gap-8 flex-col md:flex-row
           '>
             {commentList.map(item => (
               <CommentCard

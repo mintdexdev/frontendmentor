@@ -10,13 +10,13 @@ function Hero() {
         <div className='mx-auto pt-5 pb-20 text-center'>
 
 
-          <img className='mx-auto w-[30vw] 2xl:max-w-[640px]'
+          <img className='mx-auto md:w-[30vw] 2xl:max-w-[640px]'
             src={imgIllustrationIntro} alt="" />
 
 
-          <h1 className='max-w-[30ch] m-auto text-7xl my-10' >All your files in one secure location, accessible anywhere.</h1>
+          <h1 className='max-w-[30ch] m-auto my-10 text-4xl md:text-7xl ' >All your files in one secure location, accessible anywhere.</h1>
 
-          <p className='mb-4'>
+          <p className='mb-4 text-neutral-300'>
             Fylo stores all your most important files in one secure location.
             <br />
             Access them wherever you need, share and collaborate with friends family, and co-workers.

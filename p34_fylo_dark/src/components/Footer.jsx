@@ -6,12 +6,12 @@ import { iconEmail, iconLocation, iconPhone } from '../assets'
 function Footer() {
   return (
     <footer >
-      <div className='pt-50 pb-20 bg-[hsl(216,53%,9%)]'>
+      <div className='pt-60 md:pt-50 md:pb-20 bg-[hsl(216,53%,9%)]'>
         <Container>
 
           {/* content starts */}
           <Logo className='mb-10' />
-          <div className='text-neutral-400 grid grid-cols-12 gap-8'>
+          <div className='text-neutral-400 grid grid-rows-5 gap-8 md:grid-cols-12 md:grid-rows-none '>
             <div className='col-span-3 flex gap-4'>
               <img className='w-5 h-5' src={iconLocation} alt="" />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -41,9 +41,9 @@ function Footer() {
               <li>Privacy</li>
             </ul>
             <div className='col-span-2'>
-              <span>FB</span>
-              <span>X</span>
-              <span>IN</span>
+              <p>facebook</p>
+              <p>X (twitter)</p>
+              <p>instagram</p>
             </div>
           </div>
           {/* content end */}
