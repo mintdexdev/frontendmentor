@@ -54,10 +54,10 @@ function Header({ currentViewport }) {
         </div>
         {currentViewport !== 'small' ?
           < ul className='flex gap-4 text-white font-semibold'>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul> : null
         }
       </nav>
