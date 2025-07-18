@@ -3,7 +3,7 @@ import { iconClose, iconHamburger, imgLogo } from '../assets'
 import { motion, AnimatePresence } from 'motion/react'
 
 function Header({ currentViewport }) {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className='absolute z-10 top-0 left-0 w-full'>
