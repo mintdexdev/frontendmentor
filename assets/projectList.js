@@ -305,4 +305,13 @@ export const projectList = [
     projectImageFallback: 'assets/imageFallback/34.jpg',
     projectVideo: 'assets/video/34.mp4',
   },
+  {
+    id: 35,
+    projectName: 'Room',
+    projectLink: 'p35_room/index.html',
+    projectDate: 'July 2025',
+    projectImage: 'assets/image/35.avif',
+    projectImageFallback: 'assets/imageFallback/35.jpg',
+    projectVideo: 'assets/video/35.mp4',
+  },
 ]
