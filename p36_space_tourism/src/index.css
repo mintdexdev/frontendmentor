@@ -1,6 +1,101 @@
 @import 'tailwindcss';
 
+
+:root {
+  --font-serif: "Bellefair", serif;
+  --font-sans: "Barlow", sans-serif;
+  --font-condensed: "Barlow Condensed", sans-serif;
+
+  --color-blue-900: #0b0d17;
+  --color-blue-300: #d0d6f9;
+  --color-white: #ffffff;
+
+  --fs--2: clamp(0.7901rem, 0.7445rem + 0.2026vw, 0.9877rem);
+  --fs--1: clamp(0.8889rem, 0.8376rem + 0.2279vw, 1.1111rem);
+  --fs-0: clamp(1rem, 0.9423rem + 0.2564vw, 1.25rem);
+  --fs-1: clamp(1.414rem, 1.2736rem + 0.6241vw, 2.0225rem);
+  --fs-2: clamp(1.9994rem, 1.7056rem + 1.3057vw, 3.2724rem);
+  --fs-3: clamp(2.8271rem, 2.2577rem + 2.5309vw, 5.2948rem);
+  --fs-4: clamp(3.9976rem, 2.9431rem + 4.6865vw, 8.5669rem);
+  --fs-5: clamp(5.6526rem, 3.7583rem + 8.4192vw, 13.8613rem);
+}
+
 button,
 a {
   cursor: pointer;
+}
+
+.text-preset-1 {
+  font-size: var(--fs-5);
+  font-family: var(--font-serif);
+  letter-spacing: 0;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-preset-2 {
+  font-size: var(--fs-4);
+  font-family: var(--font-serif);
+  letter-spacing: 0;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-preset-3 {
+  font-size: var(--fs-3);
+  font-family: var(--font-serif);
+  letter-spacing: 0;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-preset-4 {
+  font-size: var(--fs-2);
+  font-family: var(--font-serif);
+  letter-spacing: 0;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-preset-5 {
+  font-size: var(--fs-1);
+  font-family: var(--font-condensed);
+  letter-spacing: 4px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-preset-6 {
+  font-size: var(--fs-1);
+  font-family: var(--font-serif);
+  letter-spacing: 0;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-preset-7 {
+  font-size: var(--fs--2);
+  font-family: var(--font-condensed);
+  letter-spacing: 2px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-preset-8 {
+  font-size: var(--fs--1);
+  font-family: var(--font-condensed);
+  letter-spacing: 2px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-preset-9 {
+  font-size: var(--fs-0);
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+  line-height: 1.8;
+}
+
+.container-constraints {
+  padding-inline: clamp(24px, 11.0769px + 3.5897vw, 80px);
 }

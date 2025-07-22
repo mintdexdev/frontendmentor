@@ -1,21 +1,45 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addSpaceData } from './store/dataSlice'
+
+import { Outlet } from 'react-router';
+import { Container, Header } from './components';
 
 function App() {
+  const [viewport, setViewport] = useState(0)
+
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    fetch('/data/data.json')
+      .then(res => res.json())
+      .then(data => { dispatch(addSpaceData(data)) })
+      .catch(err => console.error('Failed to load data.json', err))
+      .finally(() => setLoading(false))
+
+    // if api fetch
+    // setTimeout(() => {
+    //   fetch('/data/data.json')
+    //     .then(res => res.json())
+    //     .then(data => { dispatch(addSpaceData(data)) })
+    //     .catch(err => console.error('Failed to load data.json', err))
+    //     .finally(() => setLoading(false))
+    // }, 1000); // 1 second delay
+
+    setViewport(window.innerWidth)
+
+  }, []);
+
+
+  if (loading) return <p>Loading...</p>;
+
   return (
-    <div>
-      00 Home
-      01 Destination
-      02 Crew
-      03 Technology
+    <div className='text-white'>
 
-      So, you want to travel to
-      Space
-      Let’s face it; if you want to go to space, you might as well genuinely go to
-      outer space and not hover kind of on the edge of it. Well sit back, and relax
-      because we’ll give you a truly out of this world experience!
+      {/* <Header /> */}
+      <Outlet />
 
-      Explore
-      
     </div>
   )
 }
