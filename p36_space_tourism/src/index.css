@@ -60,7 +60,7 @@ a {
 .text-preset-5 {
   font-size: var(--fs-1);
   font-family: var(--font-condensed);
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   line-height: normal;
   text-transform: uppercase;
 }

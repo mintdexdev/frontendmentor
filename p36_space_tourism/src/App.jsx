@@ -6,7 +6,28 @@ import { Outlet } from 'react-router';
 import { Container, Header } from './components';
 
 function App() {
-  const [viewport, setViewport] = useState(0)
+  const [currentViewport, setCurrentViewport] = useState('small');
+
+  useEffect(() => {
+    const checkViewportSize = () => {
+      const viewport = window.innerWidth
+
+      if (viewport < 640) {
+        setCurrentViewport('small')
+      } else if (viewport < 1024) {
+        setCurrentViewport('medium')
+      } else {
+        setCurrentViewport('large')
+      }
+    }
+    checkViewportSize()
+
+    window.addEventListener('resize', checkViewportSize)
+    return () => window.removeEventListener('resize', checkViewportSize)
+
+  }, [])
+
+
 
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch()
@@ -27,7 +48,6 @@ function App() {
     //     .finally(() => setLoading(false))
     // }, 1000); // 1 second delay
 
-    setViewport(window.innerWidth)
 
   }, []);
 
@@ -37,7 +57,7 @@ function App() {
   return (
     <div className='text-white'>
 
-      {/* <Header /> */}
+      <Header currentViewport={currentViewport} />
       <Outlet />
 
     </div>
