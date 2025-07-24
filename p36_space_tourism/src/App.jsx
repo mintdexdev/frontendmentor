@@ -1,24 +1,21 @@
 import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addSpaceData } from './store/dataSlice'
+import { setViewportSize } from './store/screenSlice'
 
 import { Outlet } from 'react-router';
 import { Container, Header } from './components';
 
 function App() {
-  const [currentViewport, setCurrentViewport] = useState('small');
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch()
 
   useEffect(() => {
     const checkViewportSize = () => {
       const viewport = window.innerWidth
-
-      if (viewport < 640) {
-        setCurrentViewport('small')
-      } else if (viewport < 1024) {
-        setCurrentViewport('medium')
-      } else {
-        setCurrentViewport('large')
-      }
+      if (viewport < 640) { dispatch(setViewportSize('small')) }
+      else if (viewport < 1024) { dispatch(setViewportSize('medium')) }
+      else { dispatch(setViewportSize('large')) }
     }
     checkViewportSize()
 
@@ -27,28 +24,12 @@ function App() {
 
   }, [])
 
-
-
-  const [loading, setLoading] = useState(true);
-  const dispatch = useDispatch()
-
   useEffect(() => {
     fetch('/data/data.json')
       .then(res => res.json())
       .then(data => { dispatch(addSpaceData(data)) })
       .catch(err => console.error('Failed to load data.json', err))
       .finally(() => setLoading(false))
-
-    // if api fetch
-    // setTimeout(() => {
-    //   fetch('/data/data.json')
-    //     .then(res => res.json())
-    //     .then(data => { dispatch(addSpaceData(data)) })
-    //     .catch(err => console.error('Failed to load data.json', err))
-    //     .finally(() => setLoading(false))
-    // }, 1000); // 1 second delay
-
-
   }, []);
 
 
@@ -57,7 +38,7 @@ function App() {
   return (
     <div className='text-white'>
 
-      <Header currentViewport={currentViewport} />
+      <Header />
       <Outlet />
 
     </div>
