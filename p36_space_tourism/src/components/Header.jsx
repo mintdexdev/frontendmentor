@@ -65,12 +65,12 @@ function Header() {
         <Link className='p-[24px]'
           to={'/'}
           onClick={() => setIsMenuOpen(false)}
-          >
+        >
           <Logo />
         </Link>
 
 
-        {currentViewport === 'small' &&
+        {currentViewport !== 'large' &&
           <div className='p-[24px] flex items-center'>
             <motion.button className='h-fit will-change-transform duration-75'
               type='button'
@@ -82,7 +82,7 @@ function Header() {
           </div>
         }
 
-        {currentViewport !== 'small' &&
+        {currentViewport === 'large' &&
           <nav className='w-full'
           >
             {/* <div className='absolute top-0 right-0 w-[80%] h-full z-[-10] bg-white/10 backdrop-blur-2xl'>

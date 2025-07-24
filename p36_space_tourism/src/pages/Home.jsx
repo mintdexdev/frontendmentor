@@ -1,16 +1,34 @@
 import React from 'react'
-import { Container } from '../components'
-import { imgBackgroundHomeMobile } from '../assets'
+import { BackgroundImage, Container } from '../components'
+import { imgBackgroundHomeDesktop, imgBackgroundHomeMobile, imgBackgroundHomeTablet } from '../assets'
+import { useSelector } from 'react-redux'
 
 function Home() {
+  const currentViewport = useSelector(state => state.screenSlice.viewportSize)
+
   return (
     <section className='relative'>
+
       <div className='absolute inset-0 z-[-999]'>
-        <img className='w-full h-full object-cover'
-          src={imgBackgroundHomeMobile} alt="space earth" />
+        {currentViewport === 'small' &&
+          <BackgroundImage
+            imgSource={imgBackgroundHomeMobile}
+            alt={'space earth'} />
+        }
+        {currentViewport === 'medium' &&
+          <BackgroundImage
+            imgSource={imgBackgroundHomeTablet}
+            alt={'space earth'} />
+        }
+        {currentViewport === 'large' &&
+          <BackgroundImage
+            imgSource={imgBackgroundHomeDesktop}
+            alt={'space earth'} />
+        }
       </div>
+
       <Container>
-        <div className='min-h-svh flex flex-col pt-[clamp(120px,65.2174px+10.8696vw,200px)]'>
+        <div className='min-h-svh pt-[clamp(120px,65.2174px+10.8696vw,200px)] flex flex-col lg:flex-row lg:items-center'>
 
           <div className='text-center'>
             <p className='text-preset-5'>
@@ -22,7 +40,7 @@ function Home() {
             </p>
           </div>
 
-          <div className='p-4 flex items-center justify-center grow'>
+          <div className='p-8 flex items-center justify-center grow'>
             <button className='text-preset-4 px-10 aspect-square rounded-full bg-white text-black'>Explore</button>
           </div>
 
