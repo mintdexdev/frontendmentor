@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import store from './store/store.js'
 
 import { createBrowserRouter, redirect, RouterProvider } from 'react-router'
-import { Crew, Crew2, Destination, Home, Technology } from './pages'
+import { Crew, Destination, Home, Technology } from './pages'
 
 const router = createBrowserRouter([
   { path: '*', loader: () => redirect('/') },
@@ -18,7 +18,6 @@ const router = createBrowserRouter([
       { path: '', element: <Home /> },
       { path: '/destination', element: <Destination /> },
       { path: '/crew', element: <Crew /> },
-      { path: '/crew2', element: <Crew2 /> },
       { path: 'technology', element: <Technology /> },
     ]
   }

@@ -3,10 +3,20 @@ import { useSelector } from 'react-redux'
 import { imgBackgroundCrewDesktop, imgBackgroundCrewMobile, imgBackgroundCrewTablet } from '../assets'
 import { BackgroundImage, Container } from '../components'
 
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
 function Crew() {
   const currentViewport = useSelector(state => state.screenSlice.viewportSize)
   const crewData = useSelector(state => state.dataSlice.spaceData.crew)
-  const [currentCrewMember, setCurrrentCrewMember] = useState(crewData[0])
 
   return (
 
@@ -38,29 +48,8 @@ function Crew() {
             meet your crew
           </div>
 
-          <div className='mt-8 text-center h-ful lg:min-h-[400px] lg:flex lg:text-left lg:items-center lg:pb-10 lg:h-full ' >
-
-            <div className='lg:w-[50%] max-w-[60ch] mx-auto'>
-              <div className='min-h-[280px]  '>
-                <p className='text-preset-6 text-neutral-400'>{currentCrewMember.role}</p>
-                <p className='my-2 text-preset-4'>{currentCrewMember.name}</p>
-                <p className='mt-6 text-preset-9'>{currentCrewMember.bio}</p>
-              </div>
-
-              <div className='my-6 px-10 flex gap-5 justify-center lg:justify-start lg:mt-20 lg:p-0'>
-                {crewData.map(item => (
-                  <button
-                    className={`w-2 h-2 rounded-full  ${currentCrewMember.name === item.name ? 'bg-white' : 'bg-neutral-400'}`}
-                    key={item.name}
-                    onClick={() => setCurrrentCrewMember(item)}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className='max-w-[200px] h-[300px]  mx-auto pt-10 lg:p-0 lg:max-w-full lg:w-[30%]'>
-              <img className=' h-full' src={currentCrewMember.images.webp} alt="" />
-            </div>
+          <div>
+            <SwiperText crewData={crewData} />
           </div>
 
         </div>
@@ -68,5 +57,40 @@ function Crew() {
     </section >
   )
 }
-
 export default Crew
+
+
+function SwiperText({ crewData }) {
+  return (
+    <>
+      <Swiper
+        spaceBetween={100}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+      >
+        {crewData.map(item => (
+          <SwiperSlide key={item.name}>
+
+            <div className='cursor-pointer pointer-events-none mt-8 text-center h-full lg:min-h-[400px] lg:flex lg:text-left lg:items-center lg:pb-10 lg:h-full ' >
+
+              <div className='min-h-[280px] lg:w-[50%] max-w-[60ch] mx-auto '>
+                <p className='text-preset-6 text-neutral-400'>{item.role}</p>
+                <p className='my-2 text-preset-4'>{item.name}</p>
+                <p className='mt-6 text-preset-9'>{item.bio}</p>
+              </div>
+
+              <div className=' h-[300px] w-fit mx-auto mb-10 lg:p-0 lg:max-w-full lg:w-[30%]'>
+                <img className=' h-full' src={item.images.webp} alt="" />
+              </div>
+            </div>
+
+          </SwiperSlide>
+
+        ))}
+
+      </Swiper>
+    </>
+  );
+}

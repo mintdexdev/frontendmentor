@@ -32,7 +32,7 @@ function App() {
         .then(data => { dispatch(addSpaceData(data)) })
         .catch(err => console.error('Failed to load data.json', err))
         .finally(() => { setIsLoading(false) })
-    }, 0 )
+    }, 1000 )
 
     return () => clearTimeout(timer)
   }, []);
