@@ -54,8 +54,8 @@ function Technology() {
                 {technologyData.map((item, index) => (
                   <button
                     className={`w-10 h-10 rounded-full
-                  ${currentTechnology.name === item.name ? 'bg-white text-black' : 'text-white border border-white backdrop-blur-md'}`}
-                    imgBackgroundTechnologyMobilekey={item.name}
+                    ${currentTechnology.name === item.name ? 'bg-white text-black' : 'text-white border border-white backdrop-blur-md'}`}
+                    key={item.name}
                     onClick={() => setCurrentTechnology(item)}
                   >
                     {index}

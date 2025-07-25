@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router'
+import { Link, NavLink, useLocation } from 'react-router'
 import { useSelector } from 'react-redux'
 
 import { Container, Logo } from '../components'
@@ -11,7 +11,7 @@ const navlinkList = [
   {
     id: '00',
     name: 'Home',
-    link: '',
+    link: '/',
   },
   {
     id: '01',
@@ -120,9 +120,7 @@ function Header() {
 export default Header
 
 function Menu({ setIsMenuOpen }) {
-
-  const [activeId, setActiveId] = useState(null)
-
+  const location = useLocation();
 
   // animations
   const menuAnimation = {
@@ -162,10 +160,9 @@ function Menu({ setIsMenuOpen }) {
         </div>
         <ul className='mt-12 pl-[24px] flex flex-col gap-4 text-preset-8'>
           {navlinkList.map(item => (
-            <li className={`${activeId === item.id ? 'border-r-4' : null}`}
+            <li className={`${location.pathname === item.link ? 'border-r-4' : null}`}
               key={item.name}>
               <NavLink
-                className={({ isActive }) => isActive ? setActiveId(item.id) : null}
                 to={item.link}
                 onClick={() => setIsMenuOpen(false)}
               >

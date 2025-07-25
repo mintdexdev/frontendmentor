@@ -31,7 +31,7 @@ function Destination() {
 
       <Container>
 
-        <div className='min-h-svh flex flex-col pt-[100px] lg:justify-center'>
+        <div className='min-h-dvh flex flex-col pt-[100px] lg:justify-center'>
 
           <div className='text-preset-8 text-center lg:text-left'>
             <span className='mr-4 font-bold  text-neutral-500'>01</span>
@@ -39,7 +39,7 @@ function Destination() {
           </div>
 
 
-          <div className='text-center overflow-clip lg:flex lg:text-left lg:items-center ' >
+          <div className='text-center lg:flex lg:text-left lg:items-center ' >
             <div className='max-w-[200px] h-fit mx-auto py-10 lg:max-w-full '>
               <img className='w-full h-full' src={currentDestination.images.webp} alt="" />
             </div>
