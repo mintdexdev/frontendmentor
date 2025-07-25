@@ -314,4 +314,13 @@ export const projectList = [
     projectImageFallback: 'assets/imageFallback/35.jpg',
     projectVideo: 'assets/video/35.mp4',
   },
+  {
+    id: 36,
+    projectName: 'Space Tourism',
+    projectLink: 'p36_space_tourism/index.html',
+    projectDate: 'July 2025',
+    projectImage: 'assets/image/36.avif',
+    projectImageFallback: 'assets/imageFallback/36.jpg',
+    projectVideo: 'assets/video/36.mp4',
+  },
 ]

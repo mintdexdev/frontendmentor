@@ -2,7 +2,7 @@ import { projectList } from "./assets/projectList.js";
 const selectedProjectsWrapper = document.querySelector('#selectedProjectsWrapper');
 const allProjectsWrapper = document.querySelector('#allProjectsWrapper');
 
-const selectedIds = [33, 32, 35, 34];
+const selectedIds = [36, 33, 32, 35 ];
 
 const selectedProjectsList = selectedIds.map(id =>
   projectList.find(project => id === project.id)
