@@ -6,9 +6,9 @@
   --font-sans: "Barlow", sans-serif;
   --font-condensed: "Barlow Condensed", sans-serif;
 
-  --color-blue-900: #0b0d17;
-  --color-blue-300: #d0d6f9;
   --color-white: #ffffff;
+  --color-primary: #d0d6f9;
+  --color-seconday: #0b0d17;
 
   --fs--2: clamp(0.7901rem, 0.7445rem + 0.2026vw, 0.9877rem);
   --fs--1: clamp(0.8889rem, 0.8376rem + 0.2279vw, 1.1111rem);
@@ -60,7 +60,7 @@ a {
 .text-preset-5 {
   font-size: var(--fs-1);
   font-family: var(--font-condensed);
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -94,6 +94,7 @@ a {
   font-family: var(--font-sans);
   letter-spacing: 0;
   line-height: 1.8;
+  color: var(--color-primary);
 }
 
 .container-constraints {
