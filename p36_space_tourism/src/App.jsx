@@ -4,10 +4,11 @@ import { addSpaceData } from './store/dataSlice'
 import { setViewportSize } from './store/screenSlice'
 
 import { Outlet } from 'react-router';
-import { Container, Header } from './components';
+import { Header, IntroLoading } from './components';
+import { AnimatePresence } from 'motion/react';
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -25,23 +26,34 @@ function App() {
   }, [])
 
   useEffect(() => {
-    fetch('/data/data.json')
-      .then(res => res.json())
-      .then(data => { dispatch(addSpaceData(data)) })
-      .catch(err => console.error('Failed to load data.json', err))
-      .finally(() => setLoading(false))
+    const timer = setTimeout(() => {
+      fetch('/data/data.json')
+        .then(res => res.json())
+        .then(data => { dispatch(addSpaceData(data)) })
+        .catch(err => console.error('Failed to load data.json', err))
+        .finally(() => { setIsLoading(false) })
+    }, 0 )
+
+    return () => clearTimeout(timer)
   }, []);
 
-
-  if (loading) return <p>Loading...</p>;
-
   return (
-    <div className='text-white'>
+    <>
+      <AnimatePresence>
+        {isLoading &&
+          <IntroLoading />
+        }
+      </AnimatePresence>
 
-      <Header />
-      <Outlet />
+      {!isLoading && (
+        <div className='text-white'>
+          <Header />
+          <Outlet />
+        </div>
+      )}
 
-    </div>
+
+    </>
   )
 }
 

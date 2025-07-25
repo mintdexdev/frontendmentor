@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router'
 import { useSelector } from 'react-redux'
-
-import { Container, Logo } from '../components'
+import { Logo } from './'
 import { iconClose, iconHamburger } from '../assets'
 import { AnimatePresence, motion } from 'motion/react'
 
@@ -96,6 +95,7 @@ function Header() {
                   <NavLink
                     to={item.link}
                     onClick={() => setIsMenuOpen(false)}
+                    className={' hover:text-neutral-500 duration-300'}
                   >
                     <span className='mr-2 font-bold'>{item.id}</span>
                     {item.name}
@@ -165,8 +165,9 @@ function Menu({ setIsMenuOpen }) {
               <NavLink
                 to={item.link}
                 onClick={() => setIsMenuOpen(false)}
+                className={' hover:text-neutral-500 duration-300'}
               >
-                <span className='mr-2 font-bold'>{item.id}</span>
+                <span className='mr-2 font-bold  '>{item.id}</span>
                 {item.name}
               </NavLink>
             </li>
