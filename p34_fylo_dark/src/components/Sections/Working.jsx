@@ -1,4 +1,3 @@
-import React from 'react'
 import { iconArrow, imgIllustrationStayProductive } from '../../assets'
 import Container from '../Container'
 
@@ -22,8 +21,8 @@ function Working() {
 
               <p className='mb-3 text-neutral-400'> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required. </p>
 
-              <a className='relative text-cyan-300
-              after:absolute after:-bottom-1.5 after:left-0 after:w-full after:h-[2px] after:bg-cyan-500'
+              <a className='relative text-cyan-300 hover:text-cyan-800
+              after:absolute after:-bottom-1.5 after:left-0 after:w-full after:h-[2px] after:bg-cyan-500 hover:after:bg-cyan-800'
                 href="#working">
                 See how Fylo works
                 <img className='inline ml-2' src={iconArrow} alt="" />

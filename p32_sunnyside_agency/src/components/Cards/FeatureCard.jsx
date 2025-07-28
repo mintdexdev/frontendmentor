@@ -1,6 +1,4 @@
-import React from 'react'
-
-function FeatureCard({ imageSrc, alt, title, description }) {
+export default function FeatureCard({ imageSrc, alt, title, description }) {
   return (
     <div className='relative w-full sm:w-[50%]'>
       <img
@@ -18,5 +16,3 @@ function FeatureCard({ imageSrc, alt, title, description }) {
     </div>
   )
 }
-
-export default FeatureCard

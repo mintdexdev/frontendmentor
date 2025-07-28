@@ -22,7 +22,7 @@ function App() {
   }, [])
 
   return (
-    <div className=' '>
+    <div className='lg:h-screen lg:flex lg:flex-col'>
       <Header currentViewport={currentViewport} />
       <Hero currentViewport={currentViewport} />
       <About />

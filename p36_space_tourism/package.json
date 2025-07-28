@@ -1,7 +1,7 @@
 {
-  "name": "p36_space_tourism",
+  "name": "space_tourism",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

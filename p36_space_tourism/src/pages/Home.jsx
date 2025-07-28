@@ -1,45 +1,27 @@
-import { useSelector } from 'react-redux'
-import { imgBackgroundHomeDesktop, imgBackgroundHomeMobile, imgBackgroundHomeTablet } from '../assets'
-import { BackgroundImage, Container, SplitText } from '../components'
-
-import { motion as m } from 'motion/react'
 import { useNavigate } from 'react-router'
+import {
+  BackgroundImage,
+  Container,
+  SplitText
+} from '../components'
+import {
+  imgBackgroundHomeMobile,
+  imgBackgroundHomeTablet,
+  imgBackgroundHomeDesktop,
+} from '../assets'
+
+const backgroundImageList = [
+  { atViewport: 'small', imageSource: imgBackgroundHomeMobile },
+  { atViewport: 'medium', imageSource: imgBackgroundHomeTablet },
+  { atViewport: 'large', imageSource: imgBackgroundHomeDesktop }
+]
 
 function Home() {
-  const currentViewport = useSelector(state => state.screenSlice.viewportSize)
   const navigate = useNavigate()
-
-  const exploreButtonAnimations = {
-    initial: {
-      outlineColor: 'rgba(255, 255, 255, 0.3)', // white with 30% opacity
-      outlineWidth: 0,
-    },
-    whileHover: {
-      outlineColor: 'rgba(255, 255, 255, 0.3)', // white with 30% opacity
-      outlineWidth: 30,
-    }
-  }
 
   return (
     <section className='relative'>
-
-      <div className='absolute inset-0 z-[-999]'>
-        {currentViewport === 'small' &&
-          <BackgroundImage
-            imgSource={imgBackgroundHomeMobile}
-            alt={'space earth'} />
-        }
-        {currentViewport === 'medium' &&
-          <BackgroundImage
-            imgSource={imgBackgroundHomeTablet}
-            alt={'space earth'} />
-        }
-        {currentViewport === 'large' &&
-          <BackgroundImage
-            imgSource={imgBackgroundHomeDesktop}
-            alt={'space earth'} />
-        }
-      </div>
+      <BackgroundImage backgroundImageList={backgroundImageList} />
 
       <Container>
         <div className='min-h-svh pt-[clamp(120px,65.2174px+10.8696vw,200px)] flex flex-col lg:flex-row lg:items-center'>
@@ -49,8 +31,8 @@ function Home() {
               So, you want to travel to
             </p>
             <SplitText
+              className='mt-2 mb-6 text-preset-1 pointer-events-none'
               text="Space"
-              className='mt-2 mb-6 text-preset-1'
               delay={100}
               duration={1.6}
               ease="power3.out"
@@ -72,7 +54,9 @@ function Home() {
               className='text-preset-4 px-10 aspect-square rounded-full bg-white text-black
               outline-0 outline-white/40 duration-400 ease-out hover:outline-[40px] active:scale-95 active:outline-[60px]'
               onClick={() => navigate('/destination')}
-            >Explore</button>
+            >
+              Explore
+            </button>
           </div>
 
         </div>

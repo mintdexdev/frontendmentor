@@ -1,6 +1,4 @@
-import React from 'react'
-
-function TestimonialCard({ image, name, role, comment }) {
+export default function TestimonialCard({ image, name, role, comment }) {
   return (
     <div className='p-4 flex flex-col items-center sm:p-0 lg:p-4'>
       <img
@@ -12,5 +10,3 @@ function TestimonialCard({ image, name, role, comment }) {
     </div>
   )
 }
-
-export default TestimonialCard

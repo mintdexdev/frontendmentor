@@ -1,54 +1,35 @@
-import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { imgBackgroundCrewDesktop, imgBackgroundCrewMobile, imgBackgroundCrewTablet } from '../assets'
-import { BackgroundImage, Container } from '../components'
-
+import { BackgroundImage, Container, PageHeading } from '../components'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Pagination } from 'swiper/modules';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+const backgroundImageList = [
+  { atViewport: 'small', imageSource: imgBackgroundCrewMobile },
+  { atViewport: 'medium', imageSource: imgBackgroundCrewTablet },
+  { atViewport: 'large', imageSource: imgBackgroundCrewDesktop }
+]
 
 function Crew() {
-  const currentViewport = useSelector(state => state.screenSlice.viewportSize)
   const crewData = useSelector(state => state.dataSlice.spaceData.crew)
 
   return (
-
     <section className='relative'>
 
-      <div className='absolute inset-0 z-[-999]'>
-        {currentViewport === 'small' &&
-          <BackgroundImage
-            imgSource={imgBackgroundCrewMobile}
-            alt={'space background'} />
-        }
-        {currentViewport === 'medium' &&
-          <BackgroundImage
-            imgSource={imgBackgroundCrewTablet}
-            alt={'space background'} />
-        }
-        {currentViewport === 'large' &&
-          <BackgroundImage
-            imgSource={imgBackgroundCrewDesktop}
-            alt={'space background'} />
-        }
-      </div>
+      <BackgroundImage backgroundImageList={backgroundImageList} />
 
       <Container>
-        <div className='min-h-svh flex flex-col pt-[100px] lg:justify-center '>
+        <div className='min-h-svh pt-[150px] lg:h-screen lg:flex lg:flex-col'>
 
-          <div className=' text-preset-8 text-center lg:text-left'>
-            <span className='mr-4 font-bold  text-neutral-500'>02</span>
-            meet your crew
-          </div>
+          <PageHeading textNumber='02' textHeading='meet your Crew' />
 
-          <div>
+          <div className='grow flex items-center'>
             <SwiperText crewData={crewData} />
           </div>
 
@@ -71,18 +52,19 @@ function SwiperText({ crewData }) {
         modules={[Pagination]}
       >
         {crewData.map(item => (
-          <SwiperSlide key={item.name}>
+          <SwiperSlide key={item.name} className=''>
 
-            <div className='cursor-pointer pointer-events-none mt-8 text-center h-full lg:min-h-[400px] lg:flex lg:text-left lg:items-center lg:pb-10 lg:h-full ' >
+            <div className='mt-8 text-center h-full cursor-pointer    lg:min-h-[400px] lg:h-full lg:pb-10 lg:flex lg:items-center lg:text-left ' >
 
-              <div className='min-h-[280px] lg:w-[50%] max-w-[60ch] mx-auto '>
+              <div className='min-h-[280px] mx-auto max-w-[60ch] lg:w-[50%] lg:mx-0 '>
                 <p className='text-preset-6 text-neutral-400'>{item.role}</p>
                 <p className='my-2 text-preset-4'>{item.name}</p>
                 <p className='mt-6 text-preset-9'>{item.bio}</p>
               </div>
 
-              <div className=' h-[300px] w-fit mx-auto mb-10 lg:p-0 lg:max-w-full lg:w-[30%]'>
-                <img className=' h-full' src={item.images.webp} alt="" />
+              <div
+                className='w-fit h-[300px] mx-auto mb-10    lg:max-w-full lg:w-[30%] lg:h-auto lg:m-0 lg:ml-auto lg:p-0'>
+                <img className='mx-auto h-full' src={item.images.webp} alt="" />
               </div>
             </div>
 

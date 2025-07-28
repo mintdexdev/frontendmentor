@@ -1,10 +1,11 @@
-import { motion } from 'motion/react'
 import { imgLogo } from '../assets'
+import { motion } from 'motion/react'
 
-function Logo() {
+export default function Logo() {
   return (
     <motion.img
-      src={imgLogo} alt="website logo"
+      src={imgLogo}
+      alt="website logo"
       animate={{ rotate: [0, 180, 180, 360] }}
       transition={{
         duration: 1,
@@ -17,5 +18,3 @@ function Logo() {
     />
   )
 }
-
-export default Logo

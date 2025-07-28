@@ -1,6 +1,4 @@
-import React from 'react'
-
-function FeatureCard({ imgSource = '', title, body }) {
+export default function FeatureCard({ imgSource = '', title, body }) {
   return (
     <div className='max-w-[50ch] text-center p-4 '>
       <img className='m-auto'
@@ -11,5 +9,3 @@ function FeatureCard({ imgSource = '', title, body }) {
     </div>
   )
 }
-
-export default FeatureCard

@@ -1,7 +1,6 @@
 import { motion as m } from 'motion/react'
-import React from 'react'
 
-function IntroLoading() {
+export default function IntroLoading() {
   return (
     <m.div className='absolute inset-0 z-[999] bg-black flex justify-center items-center'
       animate={{ opacity: 1 }}
@@ -21,5 +20,3 @@ function IntroLoading() {
     </m.div>
   )
 }
-
-export default IntroLoading

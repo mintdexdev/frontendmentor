@@ -1,14 +1,23 @@
-import React from 'react'
+import { motion as m } from 'motion/react'
 
-function Logo({ width = '100px' }) {
+export default function Logo() {
   return (
-    <a href="/">
-      <img className=''
+    <a href="/" >
+      <m.img
         src="./images/logo.svg"
-        alt="Logo"
+        alt="website logo"
+        initial={{ scale: 1 }}
+        animate={{ opacity: [1, 0, 1] }}
+        transition={{
+          opacity: {
+            duration: 1,
+            delay: 7,
+            repeat: Infinity,
+            repeatType: 'loop',
+            repeatDelay: 7,
+          },
+        }}
       />
     </a>
   )
 }
-
-export default Logo

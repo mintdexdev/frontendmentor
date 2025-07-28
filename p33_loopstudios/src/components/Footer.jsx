@@ -1,7 +1,5 @@
-import React from 'react'
-import { Container } from './index.js';
+import { Container, Logo } from './index.js';
 import {
-  iconLogo,
   iconFacebook,
   iconTwitter,
   iconPinterest,
@@ -14,7 +12,9 @@ function Footer() {
       <Container>
         <div className='py-10 flex flex-col sm:flex-row  sm:justify-between'>
           <div className='flex flex-col p-8 justify-center '>
-            <img src={iconLogo} alt="" />
+            <div>
+              < Logo />
+            </div>
             <ul className='flex flex-col justify-center text-center sm:flex-row gap-4 mt-4'>
               <li><a href="#">About</a></li>
               <li><a href="#">Carrers</a></li>

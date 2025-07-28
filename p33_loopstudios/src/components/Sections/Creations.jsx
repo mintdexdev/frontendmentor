@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Button, CreationCard } from '../index.js';
 
 import {

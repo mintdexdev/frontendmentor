@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { iconClose, iconHamburger, imgLogo } from '../assets'
 import { motion, AnimatePresence } from 'motion/react'
 
@@ -31,10 +31,10 @@ function Header({ currentViewport }) {
             </motion.button>
 
             < ul className='flex gap-8 font-semibold  flex-wrap'>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/shop">Shop</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li className='hover:text-gray-500'><a href="/home">Home</a></li>
+              <li className='hover:text-gray-500'><a href="/shop">Shop</a></li>
+              <li className='hover:text-gray-500'><a href="/about">About</a></li>
+              <li className='hover:text-gray-500'><a href="/contact">Contact</a></li>
             </ul>
           </motion.div>
         }
@@ -50,14 +50,14 @@ function Header({ currentViewport }) {
           </motion.button> : null
         }
         <div className='w-full'>
-          <img className='mx-auto sm:mx-0' src={imgLogo} alt="" />
+          <a href="/"> <img className='mx-auto sm:mx-0' src={imgLogo} alt="company logo" /> </a>
         </div>
         {currentViewport !== 'small' ?
           < ul className='flex gap-4 text-white font-semibold'>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li className='hover:text-gray-600'><a href="/home">Home</a></li>
+            <li className='hover:text-gray-600'><a href="/shop">Shop</a></li>
+            <li className='hover:text-gray-600'><a href="/about">About</a></li>
+            <li className='hover:text-gray-600'><a href="/contact">Contact</a></li>
           </ul> : null
         }
       </nav>

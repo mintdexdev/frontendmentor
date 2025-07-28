@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
 @import 'tailwindcss';
-
 
 :root {
   --font-serif: "Bellefair", serif;
@@ -95,8 +95,4 @@ a {
   letter-spacing: 0;
   line-height: 1.8;
   color: var(--color-primary);
-}
-
-.container-constraints {
-  padding-inline: clamp(24px, 11.0769px + 3.5897vw, 80px);
 }

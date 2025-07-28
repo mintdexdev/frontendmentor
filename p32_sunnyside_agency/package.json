@@ -1,7 +1,7 @@
 {
-  "name": "p32_sunnyside_agency",
+  "name": "sunnyside_agency",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

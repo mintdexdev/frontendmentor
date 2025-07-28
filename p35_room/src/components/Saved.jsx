@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { iconAngleLeft, iconAngleRight, iconArrow, imgMobileHero1, imgMobileHero2, imgMobileHero3 } from '../assets'
 import { Container, NavigationButton } from './index.js'
 

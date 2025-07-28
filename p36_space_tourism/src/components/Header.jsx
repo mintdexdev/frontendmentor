@@ -1,41 +1,23 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink, useLocation } from 'react-router'
 import { useSelector } from 'react-redux'
+import { Link, NavLink, useLocation } from 'react-router'
 import { Logo } from './'
 import { iconClose, iconHamburger } from '../assets'
 import { AnimatePresence, motion } from 'motion/react'
 
-
 const navlinkList = [
-  {
-    id: '00',
-    name: 'Home',
-    link: '/',
-  },
-  {
-    id: '01',
-    name: 'Destination',
-    link: '/destination',
-  },
-  {
-    id: '02',
-    name: 'Crew',
-    link: '/crew',
-  },
-  {
-    id: '03',
-    name: 'Technology',
-    link: '/technology',
-  }
+  { id: '00', name: 'Home', link: '/', },
+  { id: '01', name: 'Destination', link: '/destination', },
+  { id: '02', name: 'Crew', link: '/crew', },
+  { id: '03', name: 'Technology', link: '/technology', }
 ]
 
 function Header() {
+  const currentViewport = useSelector(state => state.screenSlice.viewportSize)
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [lastScrollY, setLastScrollY] = useState(window.scrollY)
   const [headerHideStyle, setHeaderHideStyle] = useState(null)
-
-  const currentViewport = useSelector(state => state.screenSlice.viewportSize)
 
   useEffect(() => {
     const navigationHide = () => {

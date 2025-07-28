@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from '../Container'
 import FeatureCard from '../Cards/FeatureCard'
 import { iconAccessAnywhere, iconAnyFile, iconCollaboration, iconSecurity } from '../../assets'
