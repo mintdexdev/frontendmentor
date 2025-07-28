@@ -1,9 +1,7 @@
-import React from 'react'
-
-function NavigationButton({ children, className = '', ...props }) {
+export default function NavigationButton({ children, className = '', ...props }) {
   return (
     <button
-      className={`p-[clamp(1rem,4vw,2rem)] bg-black ${className}`}
+      className={`p-[clamp(1rem,4vw,2rem)] bg-black hover:bg-neutral-800 ${className}`}
       {...props}
       type='button'
     >
@@ -11,5 +9,3 @@ function NavigationButton({ children, className = '', ...props }) {
     </button >
   )
 }
-
-export default NavigationButton

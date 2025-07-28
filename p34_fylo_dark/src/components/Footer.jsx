@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Logo } from './index.js'
 import { iconEmail, iconLocation, iconPhone } from '../assets'
 
@@ -30,20 +29,20 @@ function Footer() {
 
             </div>
             <ul className='col-span-2'>
-              <li>About Us</li>
-              <li>Jobs</li>
-              <li>Press</li>
-              <li>Blog</li>
+              <li className='hover:text-gray-600'><a href="/about">About Us</a></li>
+              <li className='hover:text-gray-600'><a href="/jobs">Jobs</a></li>
+              <li className='hover:text-gray-600'><a href="/press">Press</a></li>
+              <li className='hover:text-gray-600'><a href="/blog">Blog</a></li>
             </ul>
             <ul className='col-span-2'>
-              <li>Contact Us</li>
-              <li>Terms</li>
-              <li>Privacy</li>
+              <li className='hover:text-gray-600'><a href="/contact">Contact Us</a></li>
+              <li className='hover:text-gray-600'><a href="/terms">Terms</a></li>
+              <li className='hover:text-gray-600'><a href="/privacy">Privacy</a></li>
             </ul>
             <div className='col-span-2'>
-              <p>facebook</p>
-              <p>X (twitter)</p>
-              <p>instagram</p>
+              <p className='hover:text-gray-600'> <a href="/facebook.com">Facebook</a></p>
+              <p className='hover:text-gray-600'> <a href="/x.com">X ( Twitter )</a></p>
+              <p className='hover:text-gray-600'> <a href="/instagram.com">Instagram</a></p>
             </div>
           </div>
           {/* content end */}

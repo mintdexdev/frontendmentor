@@ -1,11 +1,11 @@
-import { imgLogo } from '../assets'
+import { iconLogo } from '../assets'
 import { motion as m } from 'motion/react'
 
 export default function Logo() {
   return (
-    <a href="/" >
+    <a href="/"    >
       <m.img
-        src={imgLogo}
+        src={iconLogo}
         alt="website logo"
         initial={{ scale: 1 }}
         animate={{ opacity: [1, 0, 1] }}

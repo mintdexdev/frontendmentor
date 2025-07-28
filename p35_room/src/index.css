@@ -1,5 +1,17 @@
 @import 'tailwindcss';
 
+@media (min-width: 1024px) {
+
+  /* For Firefox */
+  :root {
+    scrollbar-width: none;
+  }
+  /* For WebKit (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 button,
 a {
   cursor: pointer;

@@ -1,4 +1,3 @@
-import React from 'react'
 import CommentCard from '../Cards/CommentCard'
 import Container from '../Container'
 import { imgProfile1, imgProfile2, imgProfile3 } from '../../assets'

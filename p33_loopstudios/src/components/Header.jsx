@@ -1,6 +1,5 @@
-import React from 'react'
-import Container from './Container/Container'
-import { iconHamburger, iconLogo } from '../assets'
+import { Container, Logo } from './'
+import { iconHamburger } from '../assets'
 
 function Header({ currentDevice }) {
   const navList = ["About", "Carrers", "Events", "Products", "Support"];
@@ -9,7 +8,7 @@ function Header({ currentDevice }) {
       <Container>
         <nav className='flex justify-between py-10'>
           <div>
-            <img src={iconLogo} alt="" />
+            < Logo />
           </div>
           {currentDevice === 'desktop' ?
             <ul className='flex gap-8'>

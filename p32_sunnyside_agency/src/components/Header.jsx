@@ -1,29 +1,20 @@
-import { motion, useAnimation } from "motion/react"
-
-import { Logo } from './'
 import { useEffect } from "react";
+import { Logo } from './'
+import { motion, useAnimation } from "motion/react"
 
 function Header({ device }) {
 
   const navList = [
-    { name: "About", },
-    { name: "Services", },
-    { name: "Projects", },
+    { name: "About", link: '/about' },
+    { name: "Services", link: '/services' },
+    { name: "Projects", link: '/projects' },
   ]
 
   const contactBtnEffect = {
-    initial: {
-      backgroundColor: 'hsl(0, 0%, 100%)',
-    },
-
-    whileHover: {
-      backgroundColor: 'hsla(0, 0%, 100%, 0.5)',
-    },
     whileTap: {
       scale: 0.95,
     },
     transition: {
-      backgroundColor: { duration: 0.1 },
       scale: { duration: 0.1 }
     }
   }
@@ -78,7 +69,7 @@ function Header({ device }) {
                 key={item.name}>
                 <a
                   className='text-lg font-semibold text-gray-100 hover:text-gray-200'
-                  href="#">{item.name}</a>
+                  href={item.link}>{item.name}</a>
               </li>
             ))}
 
@@ -86,23 +77,8 @@ function Header({ device }) {
               <motion.a
                 href="#"
                 className="inline-block px-6 py-3 rounded-full text-lg font-semibold bg-neutral-100 text-neutral-900
-                will-change-transform"
+                will-change-transform duration-300 hover:text-neutral-700 hover:bg-white/50 hover:shadow-md"
                 {...contactBtnEffect}
-
-              // initial={{
-              //   backgroundColor: 'hsl(0, 0%, 100%)',
-              // }}
-              // whileHover={{
-              //   backgroundColor: 'hsla(0, 0%, 100%, 0.5)',
-              // }}
-              // whileTap={{
-              //   scale: 0.95,
-              // }}
-              // transition={{
-              //   backgroundColor: { duration: 0.1 },
-              //   scale: { duration: 0.1 },
-              // }}
-
               >
                 Contact
               </motion.a>

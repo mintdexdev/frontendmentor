@@ -1,5 +1,5 @@
 import './App.css'
-import { CalltoActionCard, Comments, Container, EarlyAccess, Features, Footer, Header, Hero, Working } from './components'
+import { Comments, EarlyAccess, Features, Footer, Header, Hero, Working } from './components'
 
 function App() {
 
@@ -10,15 +10,15 @@ function App() {
 
       <Hero />
 
-      <Features/>
+      <Features />
 
-      <Working/>
+      <Working />
 
-      <Comments/>
+      <Comments />
 
-      <EarlyAccess/>
+      <EarlyAccess />
 
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,5 @@
-import React from 'react'
-import { motion } from 'motion/react'
 import { LearnMoreCTA } from '../index'
+import { motion } from 'motion/react'
 
 function MarketingMessageCard({ imageSrc, alt, title, description, flip = false }) {
 

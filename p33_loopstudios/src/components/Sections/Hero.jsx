@@ -1,4 +1,3 @@
-import React from 'react'
 import { imgDesktopHero } from '../../assets'
 import Container from '../Container/Container'
 

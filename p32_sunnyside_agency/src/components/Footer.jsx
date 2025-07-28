@@ -1,11 +1,10 @@
-import React from 'react'
 import { Logo } from './'
 
 function Footer({ device }) {
   const navList = [
-    { name: "About", },
-    { name: "Services", },
-    { name: "Projects", },
+    { name: "About", link: '/about' },
+    { name: "Services", link: '/services' },
+    { name: "Projects", link: '/projects' },
   ]
   const socialList = [
     { link: "./images/icon-facebook.svg", alt: "facebook social" },
@@ -44,8 +43,11 @@ function Footer({ device }) {
             <li
               key={item.name}>
               <a
-                className='text-lg font-semibold text-[hsl(167,40%,20%)] hover:text-neutral-100 transition-all hover:brightness-[200]'
-                href="#">{item.name}</a>
+                className='text-lg font-semibold text-[hsl(167,40%,20%)] duration-300 hover:text-neutral-200 transition-all'
+                href={item.link}
+              >
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>

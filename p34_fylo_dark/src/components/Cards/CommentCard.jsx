@@ -1,6 +1,4 @@
-import React from 'react'
-
-function CommentCard({ name, position, comment, imageSource }) {
+export default function CommentCard({ name, position, comment, imageSource }) {
   return (
     <div className='p-8 bg-[hsl(219,30%,18%)] '>
       <p className='mb-8 text-xl md:text-lg lg:text-2xl'>{comment}</p>
@@ -18,5 +16,3 @@ function CommentCard({ name, position, comment, imageSource }) {
     </div>
   )
 }
-
-export default CommentCard

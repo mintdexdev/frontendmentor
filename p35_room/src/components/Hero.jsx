@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { iconAngleLeft, iconAngleRight, iconArrow, imgDesktopHero1, imgDesktopHero2, imgDesktopHero3, imgMobileHero1, imgMobileHero2, imgMobileHero3 } from '../assets'
 import { NavigationButton } from './index.js'
 
@@ -82,9 +82,9 @@ export default function Hero({ currentViewport }) {
   }, [currentIndex])
 
   return (
-    <section>
+    <section className='lg:h-[70%]'>
 
-      <div className='md:flex md:w-auto md:min-h-auto md:h-[70vh] '>
+      <div className='md:flex md:w-auto md:min-h-auto md:h-[70vh] lg:h-full'>
 
         <div className='relative overflow-clip shrink-0 md:w-[60%]'>
           <motion.div className='flex cursor-grab h-full'
@@ -115,7 +115,7 @@ export default function Hero({ currentViewport }) {
 
           <div className='absolute bottom-0 right-0 flex'>
             <NavigationButton
-              className='text-white'
+              className='text-white '
               aria-label="Go to Previous"
               title="Previous"
               onClick={previousImage}
@@ -123,7 +123,7 @@ export default function Hero({ currentViewport }) {
               <img src={iconAngleLeft} alt="" />
             </NavigationButton>
             <NavigationButton
-              className='text-white'
+              className='text-white '
               aria-label="Go to Next"
               title="Next"
               onClick={nextImage}
@@ -138,8 +138,7 @@ export default function Hero({ currentViewport }) {
           />
         </div>
 
-
-        <div className='py-10 px-[clamp(1.5rem,5vw,5rem)] md:w-[40%]'>
+        <div className='py-10 px-[clamp(1.5rem,5vw,5rem)] md:w-[40%] lg:overflow-y-scroll'>
 
           <h1 className='font-bold text-[2rem] leading-[1.2] mb-4'>{list[currentIndex].title}</h1>
           <p className='font-semibold text-neutral-500'>{list[currentIndex].description}</p>
