@@ -1,7 +1,7 @@
-const projectLink = '/projects/'
+const projectLink = './projects/'
 
-const imagesCoverLink = '/assets/images/covers/'
-const imagesGalleryLink = '/assets/images/gallery/'
+const imagesCoverLink = './assets/images/covers/'
+const imagesGalleryLink = './assets/images/gallery/'
 
 export const projectList = [
   {
