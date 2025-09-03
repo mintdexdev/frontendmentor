@@ -6,8 +6,8 @@ const FeatureCard = ({ projectData }) => {
     <div
       className='relative aspect-video rounded-xl overflow-clip border border-white/30 group'
     >
-      <div className=''>
-        <img src={projectData.images.cover.avif} alt='space tourism' />
+      <div className='h-full'>
+        <img className='w-full' src={projectData.images.cover.avif} alt='space tourism' />
       </div>
 
       <div className='absolute inset-0 z-[2] flex justify-center items-center duration-300 group-hover:bg-black/60 '>
